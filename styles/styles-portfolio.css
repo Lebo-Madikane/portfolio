@@ -449,7 +449,7 @@ footer .footer-bottom {
     }
 
     .hero-section .hero-container .hero-text {
-        width: 80%;
+        width: 90%;
         padding: 5px;
         margin-bottom: 80px;
         display: flex;
@@ -470,7 +470,7 @@ footer .footer-bottom {
     }
 
     .hero-section .hero-container .hero-text .hero-p2 {
-        width: 80%;
+        width: 90%;
         font-size: 0.85em;
     }
 
@@ -482,7 +482,7 @@ footer .footer-bottom {
         width: 100%;
         height: 400px;
         position: absolute;
-        top: 80%;
+        top: 90%;
         background-image: url(/portfolio/images/portfolio-hero-bg.png);
         background-position: center;
         background-repeat: no-repeat;
