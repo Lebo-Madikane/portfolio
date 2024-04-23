@@ -449,8 +449,8 @@ footer .footer-bottom {
     }
 
     .hero-section .hero-container .hero-text {
-        width: 100%;
-        min-height: 10px;
+        width: 95%;
+        line-height: 1;
         padding: 5px;
         margin-bottom: 80px;
         display: flex;
