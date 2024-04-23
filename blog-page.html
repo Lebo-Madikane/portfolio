@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lebo Madikane">
+    <meta name="description" content="A article about the shell basics, looking into what is the shell, navigation, looking around, and manipulating files.">
+    <title>Blog: The Shell Basics</title>
+    <link rel="stylesheet" href="styles/styles-blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <aside>
+        <nav id="nav-bar">
+            <header>Documentaion</header>
+            <ul class="mainMenu">
+                <li><a class="nav-link menuList" href="#introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#what-is-the-shell">What is "The Shell"</a></li>
+                <li><a class="nav-link" href="#navigating">Navigating</a></li>
+                <li><a class="nav-link" href="#looking-around">Looking Around</a></li>
+                <li><a class="nav-link" href="#manipulating">Manipulating Files</a></li>
+                <li><a class="nav-link" href="#text-editors">TEXT Editors</a></li>
+                <li><a class="nav-link" href="#bash">BASH - Writing scripts</a></li>
+                <li><a class="nav-link conclusion" href="#conclusion">Conclusion</a></li>
+                <div class="closeMenu"><i class="fas fa-times"></i></div>
+                <div class="homepageContainer">
+                    <a href="/portfolio/portfolio-landing-page.html" target="_blank"><i class="fa fa-home homepage" aria-hidden="true"></i></a>
+                </div>
+            </ul>
+            <ul class="home">
+                <li><a href="/portfolio/portfolio-landing-page.html" target="_blank"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main id="main-doc">
+        <section id="header">
+            <div class="header-nav">
+                <h1>The Shell Basics</h1>
+                <a><i class="fas fa-bars openMenu"></i></a>
+            </div>
+        </section>
+        <section id="introduction">
+            <img src="images/The shell.jpg">
+            <header>Introduction</header>
+            <article>
+                <p>Why do you need to learn the shell? In the world of computers, the shell is like a crucial doorway to how operating systems really work. It's also called
+                the command line interface (CLI), where users control their computers using text-based commands. Even though we see a
+                lot of fancy graphical interfaces (GUIs) in modern computing, the command line is still super important for both
+                beginners and experts.</p><br>
+                <p>Learning the command line is like learning the language of computers. It gives you a lot of power to do things quickly
+                and efficiently, like managing software and controlling how your system operates. In today's tech world, being good at
+                using the command line is a really valuable skill because it's used for things like automation and remote control. </p>
+                <p>There are many reasons to learn about the shell:</p>
+                <ul>
+                    <li>The shell makes your tasks less boring. In computers, you often have to do the same things over and over, especially
+                    with lots of files. Learning the shell lets you teach your computer to do those repetitive tasks automatically.</li>
+                    <li>The shell makes your tasks less likely to have mistakes. When people do the same thing many times, they often make
+                    errors. But your computer can repeat the same task many times without making any mistakes.</li>
+                    <li>The shell makes your work easier to repeat. When you do your work using the command-line (instead of a Graphic User Interface),
+                    your computer remembers every step you took(history). This means you can easily do the same work again when needed. It also lets
+                    you clearly explain(comment) what you did, so others can check or do the same thing with new information.</li>
+                </ul><br>
+                <p>In this guide, we explore why learning about the command line is important. We'll cover the basics, practical uses, and
+                the many benefits it offers to those who take the time to learn its ins and outs.</p>
+            </article>
+        </section>
+        <section id="what-is-the-shell">
+            <header>What is "the shell"?</header>
+            <article>
+                <p>A shell is a computer program that presents a command line interface (CLI) which allows you to control your computer
+                using commands entered with a keyboard instead of controlling graphical user interfaces (GUIs) with a mouse/keyboard
+                combination.</p><br>
+                <p>If you have a Mac or Linux computer, you can use a program called Terminal to access the shell. It's already on your
+                computer. But if you're using Windows, you have to download a separate program to access the shell.</p>
+            </article>
+        </section>
+        <section id="navigating">
+            <header>Navigating</header>
+            <article>
+                <p>Before delving into navigating the shell, let's first examine the type of file system organization that the shell
+                employs.</p><br>
+                <p><span><strong>FILE SYSTEM TREE = MAZE</strong></span><br>The shell organizes folders and files in a tree-like structure, with directories(folders) containing subfolders and files. Think
+                of it like standing in a maze where each directory represents a different location. At any moment, you're in one
+                specific directory, known as the working directory. Inside this directory, you'll find files and pathways. To find out
+                the name of the current working directory, simply use the 'pwd' command.</p><br>
+                <p>To print the name of the working directory, we use the <strong>pwd</strong> command:</p>
+                <code>[lebomadikane@lebo-MacBook-Pro]$ <span class="command">pwd</span><br>/Users/lebomadikane</code><br>
+                <p>To list the files and directories of the working directory, we use the <strong>ls</strong> command:</p>
+                <code>[lebomadikane@lebo-MacBook-Pro]$ <span class="command">ls</span><br>Applications Downloads Pictures<br>Desktop Library Public
+                Documents Movies</code><br>
+                <p>To change to a different directory within the maze, we utilize the <strong>cd</strong> command followed by the pathname of the desired
+                directory:</p>
+                <code>[lebomadikane@lebo-MacBook-Pro]$ <span class="command">cd /usr/bin</span><br>[lebomadikane@lebo-MacBook-Pro bin]$</code><br>
+                <p>Pathnames can be specified in two different ways:</p>
+                <ul>
+                    <li>A <strong>Absolute Pathname</strong> starts from the root (/) directory and then follows the tree, branch by branch, until it reaches
+                    the desired directory or file.
+                    </li>
+                    <li>A <strong>Relative Pathname</strong> starts from the working directory and navigates to its destination. It can also utilize special
+                    notations to represent relative positions in the maze. </li>
+                </ul>
+            </article>
+        </section>
+        <section id="looking-around">
+            <header>Looking Around</header>
+            <article>
+                <p>Now that we've mastered navigating the shell file system—like printing the working directory and switching between
+                directories—it's time to delve into exploring the shell file system further.</p>
+                <p>Below are some of the basic commands to help us look around the shell:</p>
+                <ul>
+                    <li><strong>ls</strong> - list files and directories (as discussed before)</li>
+                    <li><strong>less</strong> - view text files</li>
+                    <li><strong>file</strong> - classify a file's content</li><br>
+                </ul>
+                <p><strong>less</strong> - A program that lets us view text files:</p>
+                <code>[lebomadikane@lebo-MacBook-Pro]$ <span class="command">less text_file</span></code><br>
+                <p><strong>file</strong> - A program that will examine a file and tell us what kind of file it is and data a file contains:</p>
+                <code>[lebomadikane@lebo-MacBook-Pro]$ <span class="command">file filename</span></code>
+            </article>
+        </section>
+        <section id="manipulating">
+            <header>Manipulating Files</header>
+            <article>
+                <p>In this lesson, we'll cover the following commands:</p>
+                <ul>
+                    <li><strong>cp</strong> - copy files and directories</li>
+                    <li><strong>mv</strong> - move or rename files and directories</li>
+                    <li><strong>rm</strong> - remove/delete files and directories</li>
+                    <li><strong>mkdir</strong> - create a directory</li>
+                    <li><strong>touch</strong> - create a file</li><br>
+                </ul>
+                <p>The <strong>cp</strong> command copies files and directories:</p>
+                <code>[lebomadikane@lebo-MacBook-Pro]$ <span class="command">cp file1 file2</span></code>
+                <p>The code above copies the content of file1 into file2. If file2 doesn't exist, it's created. Otherwise, file2 is
+                silently overwritten with the contents of file1.</p><br>
+                <p>The <strong>mv</strong> command moves and renames files and directories. To rename a file, it is used like this:</p>
+                <code>[lebomadikane@lebo-MacBook-Pro]$ <span class="command">mv filename new-filename</span></code><br>
+                <p>To move files (and/or directories) to a different directory:</p>
+                <code>[lebomadikane@lebo-MacBook-Pro]$ <span class="command">mv filename directory</span></code><br>
+                <p>The <strong>rm</strong> command removes/deletes files and directories:</p>
+                <code>[lebomadikane@lebo-MacBook-Pro]$ <span class="command">rm file1 file2</span></code><br>
+                <p>To remove directories we have to use the flag(or option) <strong>-r</strong>:</p>
+                <code>[lebomadikane@lebo-MacBook-Pro]$ <span class="command">rm -r directory-name1 directory-name2</span></code><br>
+                <p>The <strong>mkdir</strong> command is used to create directories:</p>
+                <code>[lebomadikane@lebo-MacBook-Pro]$ <span class="command">mkdir directory-name</span></code><br>
+                <p>The <strong>touch</strong> command is used to create files:</p>
+                <code>[lebomadikane@lebo-MacBook-Pro]$ <span class="command">touch filename</span></code>
+            </article>
+        </section>
+        <section id="text-editors">
+            <header>TEXT Editors</header>
+            <article>
+                <p>We've done a lot of work with existing files, but what if we want to write our own files? There are many reasons we
+                    might want to do this, or to edit an existing file. To add text to files, we'll use a text editor.</p>
+                <p>Text editors are like digital notebooks where you can write and modify text. They are essential in shell because they
+                    facilitate working with text files. Some common ones include:</p>
+                <ul>
+                    <li>Vim</li>
+                    <li>Emacs</li>
+                    <li>Nano</li>
+                </ul><br>
+                <p>They have helpful tools like finding words and making text look colorful to help you work better.</p>
+            </article>
+        </section>
+        <section id="bash">
+            <header>Bash</header>
+            <article>
+                <p>One great advantage of the command line is the ability to write scripts. Scripts enable you to save a list of commands in a single file for future
+                execution and combine multiple commands together. While writing scripts may require some initial time investment, it can
+                save you a lot of time in the long run, especially when you need to run them repeatedly.</p><br>
+                <p>To ensure your file functions as a bash script, here are some important steps to follow:</p>
+                <ul>
+                    <li>Include the "Shebang" line as the opening line of your file: #!/bin/bash.</li>
+                    <li>Grant execution permissions to your file using the chmod command.</li>
+                    <li>Optionally, you can use the .sh extension for your bash script file.</li>
+                </ul><br>
+                <p>These steps help ensure that your file behaves as a bash script and can be executed properly.</p>
+            </article>
+        </section>
+        <section id="conclusion">
+            <header>Conclusion</header>
+            <article>
+                <p>In conclusion, mastering shell basics opens a gateway to efficient command-line navigation and automation. Understanding
+                commands, file manipulation, and script writing empowers users to streamline tasks and optimize workflows. Embrace the
+                command line as a versatile tool for enhanced productivity and control over your computing environment.</p>
+            </article>
+        </section>
+    </main>
+    <script src="/portfolio/scripts/shellbasicsblog.js"></script>
+</body>
+
+</html>

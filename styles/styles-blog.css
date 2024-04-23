@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    min-width: 290px;
+    color: #4d4e53;
+    background-color: #ffffff;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+#nav-bar .mainMenu .closeMenu, .homepageContainer {
+    display: none;
+} 
+
+nav {
+    position: fixed;
+    min-width: 290px;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    border-right: 1.6px solid black;
+    border-color: rgba(0, 22, 22, 0.4);
+}
+
+nav ul {
+    height: 84%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+nav li {
+    color: #4d4e53;
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+nav ul .conclusion {
+    border-bottom: 1px solid;
+}
+
+nav a {
+    display: block;
+    padding: 10px 30px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav ul i {
+    margin-right: 5px;
+}
+
+main {
+    position: absolute;
+    margin-left: 310px;
+    margin-bottom: 110px;
+    padding: 20px;
+}
+
+main h1 {
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 2.1em;
+}
+
+#header .header-nav .openMenu {
+    display: none;
+}
+
+main img {
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+aside header {
+    color: black;
+    text-align: center;
+    font-size: 1.6em;
+    margin: 15px;
+}
+
+main header {
+    color: black;
+    text-align: left;
+    padding-top: 5px;
+    font-size: 1.6em;
+}
+
+section article {
+    color: #4d4e53;
+    margin: 15px;
+    font-size: 1em;
+    margin-left: 15px;
+}
+
+section li {
+    margin: 15px 0px 0px 20px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: black;
+    color: rgb(0, 234, 0);
+    padding: 15px;
+    margin: 9px;
+    border-radius: 5px;
+}
+
+section article .command {
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 815px) {
+    aside #nav-bar header, .home {
+        display: none;
+    }
+
+    aside #nav-bar {
+        border: none;
+    }
+
+    #main-doc #header {
+        width: 100%;
+        height: 69px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1;
+    }
+
+    #main-doc #header .header-nav {
+        width: 100%;
+        height: 100%;
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #main-doc #header .header-nav h1 {
+        position: relative;
+        top: 5px;
+        font-size: 1.2em;
+        color: #ffffff;
+    }
+
+    #main-doc #header .header-nav .openMenu {
+        display: inline-block;
+        font-size: 1.8em;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    aside #nav-bar {
+        z-index: 100;
+        color: #ffffff;
+    }
+
+    aside #nav-bar .mainMenu {
+        width: 50%;
+        height: fit-content;
+        font-size: 0.9em;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: #ffffff;
+        z-index: 10;
+        transition: right 1s ease;
+        display: none;
+    }
+    
+    aside #nav-bar .mainMenu .menuList {
+        margin-top: 68px;
+        border-top: 1px solid #4d4e53;
+    }
+
+    aside #nav-bar .mainMenu li a {
+        color: #ffffff;
+    }
+
+    aside #nav-bar .mainMenu .closeMenu {
+        display: block;
+        font-size: 2.5em;
+        position: absolute;
+        top: 5px;
+        right: 7px;
+        cursor: pointer;
+    }
+
+    aside #nav-bar .homepageContainer {
+        display: block;
+        text-align: center;
+    }
+
+    aside #nav-bar .homepageContainer a {
+        font-size: 1.3em;
+        color: #ffffff;
+    }
+
+    #introduction {
+        margin-top: 65px;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: auto;
+        margin-bottom: 0;
+    }
+
+    #main-doc img {
+        width: 320px;
+        margin-bottom: 20px;
+    }
+
+    main section header {
+        font-size: 1.4em;
+    }
+
+    main section article {
+        font-size: 1em;
+    }
+}
