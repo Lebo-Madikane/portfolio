@@ -446,13 +446,12 @@ footer .footer-bottom {
         padding: 0;
         display: flex;
         flex-direction: column;
-        background-color: #000;
     }
 
     .hero-section .hero-container .hero-text {
-        width: 95%;
+        width: 100%;
         min-height: 10px;
-        padding: 20px;
+        padding: 5px;
         margin-bottom: 80px;
         display: flex;
         flex-direction: column;
@@ -464,15 +463,20 @@ footer .footer-bottom {
     }
 
     .hero-section .hero-container .hero-text h1 {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     .hero-section .hero-container .hero-text hr {
-        width: 205px;
+        width: 188px;
     }
 
     .hero-section .hero-container .hero-text .hero-p2 {
-        width: 100%;
+        width: 80%;
+        font-size: 0.7em;
+    }
+
+    .hero-section .hero-container .hero-text {
+        font-size: 0.9em;
     }
 
     .hero-section .hero-container .hero-img-container {
