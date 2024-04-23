@@ -506,11 +506,12 @@ footer .footer-bottom {
     }
 
     .projects {
-        margin-top: 58%;
+        margin: 0;
     }
 
     .projects h2 {
-        font-size: 1.3em;
+        margin-top: 85%;
+        font-size: 1.1em;
     }
 
     .projects .project-grid .project{
@@ -521,7 +522,7 @@ footer .footer-bottom {
     }
 
     .projects .project-grid .project .p-2 {
-        width: 31%;
+        width: 40%;
         margin: -5px auto;
         font-size: 0.89em;
         padding: 5px;
