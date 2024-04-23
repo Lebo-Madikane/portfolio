@@ -522,7 +522,7 @@ footer .footer-bottom {
     }
 
     .projects .project-grid .project .p-2 {
-        width: 38%;
+        width: 37%;
         margin: -5px auto;
         font-size: 0.7em;
         padding: 5px;
@@ -554,6 +554,7 @@ footer .footer-bottom {
 
     footer .footer-nav {
         width: 90%;
+        margin: 0 auto;
     }
 
     footer .social-icons .fab {
