@@ -522,12 +522,13 @@ footer .footer-bottom {
     }
 
     .projects {
-        margin-top: 60%;
+        margin-top: 59%;
         position: relative;
         z-index: 50;
     }
 
     .projects h2 {
+
         font-size: 1.3em;
     }
 
