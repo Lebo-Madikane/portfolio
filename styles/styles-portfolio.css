@@ -471,7 +471,7 @@ footer .footer-bottom {
         position: absolute;
         overflow: hidden;
         left: auto;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
 
     .hero-section .hero-container .hero-text h1 {
@@ -527,7 +527,7 @@ footer .footer-bottom {
     }
 
     .projects h2 {
-        margin-top: 15px;
+        margin-top: -20px;
         font-size: 1.3em;
     }
 
