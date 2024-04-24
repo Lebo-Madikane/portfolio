@@ -424,7 +424,7 @@ footer .footer-bottom {
         position: fixed;
         top: 0;
         right: 0;
-        z-index: 101;
+        z-index: 151;
         background-image: url('/portfolio/images/portfolio-hero-bg.png');
         background-position: center;
         background-repeat: no-repeat;
@@ -455,7 +455,7 @@ footer .footer-bottom {
     }
 
     .hero-section .hero-container {
-        height: 100%;
+        height: auto;
         position: relative;
         overflow: hidden;
         z-index: 11;
@@ -471,6 +471,7 @@ footer .footer-bottom {
         position: absolute;
         overflow: hidden;
         left: auto;
+        margin-bottom: 50px;
     }
 
     .hero-section .hero-container .hero-text h1 {
@@ -492,7 +493,7 @@ footer .footer-bottom {
 
     .mbl-img-container {
         width: 100%;
-        height: fit-content;
+        padding: 0;
         position: absolute;
         top: 80%;
         background-image: url(/portfolio/images/portfolio-hero-bg.png);
@@ -506,13 +507,12 @@ footer .footer-bottom {
 
     .mbl-img-container .mbl-img {
         width: 100%;
+        height: 100%;
         display: block;
-        margin: 0 auto;
+        margin: 0;
         padding: 0;
         object-fit: cover;
-        right: auto;
         position: relative;
-        top: 10px;
         z-index: 150;
     }
 
@@ -527,7 +527,7 @@ footer .footer-bottom {
     }
 
     .projects h2 {
-        margin-top: 10%;
+        margin-top: 15px;
         font-size: 1.3em;
     }
 
