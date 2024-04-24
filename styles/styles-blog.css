@@ -10,6 +10,7 @@ html, body {
     background-color: #ffffff;
     font-family: 'Open Sans', Arial, sans-serif;
     line-height: 1.5;
+    overflow-x: hidden;
 }
 
 #nav-bar .mainMenu .closeMenu, .homepageContainer {
