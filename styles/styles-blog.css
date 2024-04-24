@@ -225,16 +225,16 @@ section article .command {
         margin-bottom: 0;
     }
 
-    #main-doc img {
-        width: 320px;
+    #introduction img {
+        width: 250px;
         margin-bottom: 20px;
     }
 
     main section header {
-        font-size: 1.4em;
+        font-size: 1em;
     }
 
     main section article {
-        font-size: 1em;
+        font-size: 0.5em;
     }
 }
