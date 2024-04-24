@@ -494,8 +494,7 @@ footer .footer-bottom {
 
     .hero-section .hero-container .hero-img-container .hero-mbl-img {
         display: block;
-        width: 100%;
-        height: fit-content;
+        margin: 0 auto;
         padding: 0;
         object-fit: cover;
         right: auto;
