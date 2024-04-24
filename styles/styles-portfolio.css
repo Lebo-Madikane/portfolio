@@ -455,15 +455,17 @@ footer .footer-bottom {
     }
 
     .hero-section .hero-container {
-        height: auto;
         position: relative;
         overflow: hidden;
         z-index: 11;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
     .hero-section .hero-container .hero-text {
         width: 90%;
         padding: 5px;
+        margin-top: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -471,7 +473,6 @@ footer .footer-bottom {
         position: absolute;
         overflow: hidden;
         left: auto;
-        margin-bottom: 100px;
     }
 
     .hero-section .hero-container .hero-text h1 {
@@ -527,7 +528,7 @@ footer .footer-bottom {
     }
 
     .projects h2 {
-        margin-top: -20px;
+        margin-top: -40px;
         font-size: 1.3em;
     }
 
