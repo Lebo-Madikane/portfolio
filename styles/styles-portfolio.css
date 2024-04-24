@@ -525,10 +525,11 @@ footer .footer-bottom {
         margin-top: 59%;
         position: relative;
         z-index: 50;
+        border: 2px solid yellow;
     }
 
     .projects h2 {
-
+        margin-top: -25px;
         font-size: 1.3em;
     }
 
