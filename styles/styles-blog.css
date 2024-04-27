@@ -171,12 +171,6 @@ section article .command {
         transition: right 1s ease;
     }
 
-    #main-doc #header .header-nav .openMenu i {
-        display: flex;
-        cursor: pointer;
-        z-index: 20;
-    }
-
     aside #nav-bar {
         z-index: 100;
         color: #ffffff;
