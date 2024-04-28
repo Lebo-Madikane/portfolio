@@ -162,12 +162,12 @@ section article .command {
     }
 
     #main-doc #header .header-nav .openMenu {
-        display: inline-block;
-        font-size: 1.5em;
+        display: block;
+        font-size: 1.3em;
         margin-right: 5px;
         color: #ffffff;
         cursor: pointer;
-        z-index: 15;
+        z-index: 50;
         transition: right 1s ease;
     }
 
