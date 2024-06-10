@@ -272,11 +272,17 @@ nav .mainMenu li a:hover {
     transition: 0.5s;
 }
 
-.projects .project-grid .project .project-text a:hover {
+.projects .project-grid .project .project-text .project-btn:hover {
     color: red;
     background-color: #ffffff;
     border: 0.1px solid black;
     transition: 0.5s;
+}
+
+.project-text .project-btn:active {
+    background-color: rgb(255, 44, 44);
+    color: white;
+    transition: none;
 }
 
 .projects .lets-work {
