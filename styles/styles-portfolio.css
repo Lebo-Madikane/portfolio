@@ -279,12 +279,6 @@ nav .mainMenu li a:hover {
     transition: 0.5s;
 }
 
-.project-text .project-btn:active {
-    background-color: rgb(255, 44, 44);
-    color: white;
-    transition: none;
-}
-
 .projects .lets-work {
     width: 50%;
     display: flex;
@@ -571,6 +565,28 @@ footer .footer-bottom {
         border: 1px solid rgb(255, 255, 255);
     }
 
+    .projects .project-grid .project .project-text .project-btn {
+        display: inline-block;
+        border: none;
+        border-radius: 7px;
+        padding: 8px;
+        background-color: rgb(255, 44, 44);
+        color: white;
+        font-size: 0.80em;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    
+    .projects .project-grid .project .project-text .project-btn:hover {
+        color: white;
+        background-color: rgb(255, 44, 44);
+        border: none;
+        transition: none;
+    }
+
     .projects .lets-work {
         width: 85%;
         font-size: 1.6em;
@@ -584,6 +600,7 @@ footer .footer-bottom {
     footer .social-icons .fab {
         overflow: hidden;
     }
+
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1049px) {
