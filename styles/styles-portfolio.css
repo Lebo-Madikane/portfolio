@@ -68,19 +68,19 @@ nav .mainMenu li a:hover {
 }
 
 .mobile .mobileMenu {
-    display: none;
+    display: none; /* Hamburger mobile menu not to display for desktop */
 }
 
 .hero-section {
     width: 100%;
     height: 100vh;
     color: #ffffff;
-    position: relative;
+    position: relative; /* Set position to relative for absolute positioning of child elements */
     background-image: url('/portfolio/images/portfolio-hero-bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #000;
+    background-color: #000; /* Set a fallback background color in case the image doesn't load */
     padding: 0 20px;
     display: flex;
     justify-content: center;
@@ -90,11 +90,11 @@ nav .mainMenu li a:hover {
 .hero-section .hero-container {
     width: 100%;
     min-height: 500px;
-    height: fit-content;
+    height: fit-content; /* Allow the container to grow vertically based on its content */
     padding: 0 20px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-evenly; /* Distribute child elements evenly with space between them */
+    align-items: center; 
     position: relative;
 }
 
@@ -135,7 +135,7 @@ nav .mainMenu li a:hover {
 
 .hero-section .hero-container .hero-text .resume:hover {
     cursor: pointer;
-    font-size: 1.1em;
+    font-size: 1.1em; /* Increase the font size on hover */
     transition: 0.5s;
 }
 
@@ -157,7 +157,7 @@ nav .mainMenu li a:hover {
 }
 
 .hero-section .hero-container .hero-img-container img {
-    object-fit: cover;
+    object-fit: cover; /* Make the image cover the entire container area while maintaining aspect ratio */
     width: 80%;
     padding: 0;
     position: relative;
