@@ -172,11 +172,11 @@ nav .mainMenu li a:hover {
     width: 100%;
     min-height: 750px;
     padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    display: flex; /* Use flexbox for easy layout */
+    flex-direction: column; /* Set the flex direction to column */
+    justify-content: center; /* Center items horizontally within the section */
+    align-items: center; /* Center items vertically within the section */
+    position: relative; /* Set position to relative for absolute positioning of child elements */
 }
 
 .projects h2 {
@@ -187,14 +187,14 @@ nav .mainMenu li a:hover {
 }
 
 .projects .project-grid {
-    width: 95%;
-    min-height: 820px;
+    width: 95%; /* Set the width of the project grid container */
+    min-height: 820px; 
     margin: 60px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 50px;
+    border-radius: 50px; /* Add rounded corners to the container */
     background-image: url('/portfolio/images/portfolio-projects-bg.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -205,7 +205,6 @@ nav .mainMenu li a:hover {
     width: 100%;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    
 }
 
 .projects .project-grid .project {
@@ -215,13 +214,12 @@ nav .mainMenu li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    
+    gap: 15px; /* Add some gap between child elements */
 }
 
 .projects .project-grid .project img {
     width: 89%;
-    object-fit: cover;
+    object-fit: cover; /* Make the image cover the entire area while maintaining aspect ratio */
     padding: 2px;
     margin: 2px;
     border-radius: 10px;
@@ -258,8 +256,8 @@ nav .mainMenu li a:hover {
 }
 
 .projects .project-grid .project .project-text .project-btn {
-    display: inline-block;
-    border: none;
+    display: inline-block; /* Display the button as an inline-block element */
+    border: none; /* Remove the border */
     border-radius: 7px;
     padding: 8px;
     background-color: rgb(255, 44, 44);
@@ -267,16 +265,16 @@ nav .mainMenu li a:hover {
     font-size: 0.80em;
     font-weight: bold;
     text-align: center;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: 0.5s;
+    text-transform: uppercase; /* Convert the text to uppercase */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    transition: 0.5s; /* Add a smooth transition for hover effects */
 }
 
 .projects .project-grid .project .project-text .project-btn:hover {
-    color: red;
+    color: red; 
     background-color: #ffffff;
     border: 0.1px solid black;
-    transition: 0.5s;
+    transition: 0.5s; 
 }
 
 .projects .lets-work {
