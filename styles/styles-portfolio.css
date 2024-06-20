@@ -312,11 +312,11 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('/portfolio/images/portfolio-hero-bg.png');
+    background-image: url('/portfolio/images/portfolio-hero-bg.png'); /* Set the background image */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #000;
+    background-color: #000; /* Set a fallback background color in case the image doesn't load */
 }
 
 footer .social-icons {
@@ -332,12 +332,15 @@ footer .social-icons a{
     margin: 10px;
     border-radius: 50%;
     overflow: hidden;
+    display: flex; /* Use flexbox for easy centering of the icon */
+    justify-content: center; /* Center the icon horizontally within the social icon */
+    align-items: center; /* Center the icon vertically within the social icon */
 }
 
 footer .social-icons a i {
     font-size: 1.7em;
     color: black;
-    opacity: 0.9;
+    opacity: 0.9; /* Set the opacity for the social icons */
 }
 
 footer .social-icons a:hover {
@@ -345,16 +348,16 @@ footer .social-icons a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: 0.5s;
+    transition: 0.5s; /* Add a smooth transition for hover effects */
 }
 
 footer .social-icons a:hover i {
-    color: white;
-    transition: 0.5s;
+    color: white; /* Change the color of the social icons on hover */
+    transition: 0.5s; /* Add a smooth transition for hover effects */
 }
 
 footer .footer-nav ul {
-    margin: 25px 0px;
+    margin: 25px 0px; /* Add some top and bottom margin for spacing */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -369,8 +372,8 @@ footer .footer-nav ul li a {
 }
 
 footer .footer-nav ul li a:hover {
-    opacity: 1;
-    font-size: 1.2em;
+    opacity: 1; /* Change the opacity on hover */
+    font-size: 1.2em; /* Increase the font size on hover */
     transition: 0.5s;
 }
 
