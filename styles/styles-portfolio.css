@@ -145,7 +145,7 @@ nav .mainMenu li a:hover {
 }
 
 .hero-section .hero-container .hero-text hr {
-    width: 180px;
+    width: 28.5%;
     margin-top: 1.5px;
     border-bottom: 1px solid grey;
 
@@ -481,11 +481,11 @@ footer .footer-bottom {
     }
 
     .hero-section .hero-container .hero-text hr {
-        width: 188px;
+        width: 42.5%;
     }
 
     .hero-section .hero-container .hero-text .hero-p2 {
-        width: 90%;
+        width: 80%;
         font-size: 0.9em;
     }
 
