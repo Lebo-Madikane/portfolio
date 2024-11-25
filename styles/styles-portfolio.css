@@ -120,6 +120,10 @@ nav .mainMenu li a:hover {
     margin-bottom: 13px;
 }
 
+#hero-and {
+    color: #e1af32;
+}
+
 .hero-section .hero-container .hero-text .hero-p2 {
     width: 75%;
     color: rgb(192, 192, 192);
