@@ -23,7 +23,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('/portfolio/images/portfolio-hero-bg.png');
+    background-image: url('/images/portfolio-hero-bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,7 +76,7 @@ nav .mainMenu li a:hover {
     height: 100vh;
     color: #ffffff;
     position: relative; /* Set position to relative for absolute positioning of child elements */
-    background-image: url('/portfolio/images/portfolio-hero-bg.png');
+    background-image: url('/images/portfolio-hero-bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -199,7 +199,7 @@ nav .mainMenu li a:hover {
     align-items: center;
     justify-content: center;
     border-radius: 50px; /* Add rounded corners to the container */
-    background-image: url('/portfolio/images/portfolio-projects-bg.png');
+    background-image: url('/images/projectsBg.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -289,7 +289,7 @@ nav .mainMenu li a:hover {
     height: 100px;
     border-radius: 50px;
     color: #ffffff;
-    background-image: url('/portfolio/images/portfolio-hero-bg.png');
+    background-image: url('/images/portfolio-hero-bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -316,7 +316,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('/portfolio/images/portfolio-hero-bg.png'); /* Set the background image */
+    background-image: url('/images/portfolio-hero-bg.png'); /* Set the background image */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -348,7 +348,7 @@ footer .social-icons a i {
 }
 
 footer .social-icons a:hover {
-    background-image: url('/portfolio/images/portfolio-hero-bg.png');
+    background-image: url('/images/portfolio-hero-bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -430,7 +430,7 @@ footer .footer-bottom {
         top: 0;
         right: 0;
         z-index: 151;
-        background-image: url('/portfolio/images/portfolio-hero-bg.png');
+        background-image: url('/images/portfolio-hero-bg.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -502,7 +502,7 @@ footer .footer-bottom {
         padding: 0;
         position: absolute;
         top: 80%;
-        background-image: url(/portfolio/images/portfolio-hero-bg.png);
+        background-image: url('/images/portfolio-hero-bg.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -642,7 +642,7 @@ footer .footer-bottom {
         width: 100%;
         position: absolute;
         top: 75%;
-        background-image: url(/portfolio/images/portfolio-hero-bg.png);
+        background-image: url('/images/portfolio-hero-bg.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
